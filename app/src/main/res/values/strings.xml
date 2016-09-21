@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BCDataTransfer</string>
+    <string name="copy_app_token">Copy App token from BCReveal\nOpen BCReveal, \nTap Team, \nFind
+        your team, \nTap Apps, \nTap Show App Token, \nTap the text of App token to copy, \nPaste
+        the text below.
+    </string>
+    <string name="title_activity_main">Beacon List</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Input text to send</string>
+    <string name="title_activity_transport">Transfer Data</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

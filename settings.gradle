@@ -1,0 +1,4 @@
+include ':app'
+
+//include ':bluecats-android-sdk'
+//project(':bluecats-android-sdk').projectDir = new File(settingsDir, '../../bluecats/bluecats_bcsdk-android/bluecats-android-sdk')

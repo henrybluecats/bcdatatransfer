@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="10dp"
+        android:layout_margin="5dp"
+        card_view:contentPadding="10dp"
+        card_view:cardCornerRadius="5dp">
+    <RelativeLayout
+            android:id="@+id/rl_item"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+                android:id="@+id/tv_name"
+                android:layout_below="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+                android:id="@+id/tv_name_space"
+                android:layout_below="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/tv_name"
+                android:text=""
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content" />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_sn"
+                android:layout_below="@+id/tv_address"
+                android:layout_toRightOf="@+id/tv_name_space"
+                android:text="this is a message"
+                android:textColor="@android:color/darker_gray"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rssi"
+                android:layout_below="@+id/tv_name"
+                android:text="this is a message"
+                android:textColor="@android:color/darker_gray"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rssi_sapce"
+                android:layout_below="@+id/tv_name"
+                android:layout_toRightOf="@+id/tv_rssi"
+                android:text="db"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/darker_gray"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_distance"
+                android:layout_below="@+id/tv_name"
+                android:layout_toRightOf="@+id/tv_rssi_sapce"
+                android:text="this is a message"
+                android:textColor="@android:color/darker_gray"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_distance_space"
+                android:layout_below="@+id/tv_name"
+                android:layout_toRightOf="@+id/tv_distance"
+                android:text="m"
+                android:textColor="@android:color/darker_gray"
+        />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

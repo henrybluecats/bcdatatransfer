@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+
+             android:layout_margin="15dp"
+             tools:context="com.bluecats.app.bcdatatransfer.SendtextFragment">
+
+    <RelativeLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Input file name:"/>
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_text"
+                android:layout_below="@+id/tv_hint"
+                android:text="image.jpg"
+                android:minLines="1"
+                android:maxLines="1"/>
+
+        <Button
+                android:id="@+id/btn_send"
+                android:layout_below="@+id/et_text"
+                android:layout_centerHorizontal="true"
+                android:text="Fetch"
+                android:minWidth="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/btn_view"
+                android:text="View image"
+                android:visibility="invisible"
+                android:layout_below="@id/et_text"
+                android:layout_toRightOf="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:id="@+id/tv_response"
+                android:layout_below="@+id/btn_send"
+                android:scrollbars="vertical"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:minLines="20"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pb_waiting"
+                android:layout_below="@+id/btn_send"
+                android:visibility="gone"
+        />
+    </RelativeLayout>
+
+
+
+</FrameLayout>
